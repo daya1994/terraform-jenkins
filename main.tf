@@ -14,9 +14,9 @@ provider "aws" {
 
 # Create a VPC
 resource "aws_instance" "web_server" {
-  ami           = "ami-0332d564d76dbd8d6" # Replace with the desired AMI ID
+  ami           = "ami-0354c98ae10b02961" # Replace with the desired AMI ID
   instance_type = "t3.micro"
   tags = {
-    Name = "tomcat-servers"
+    Name = "webserver"
   }
 }
